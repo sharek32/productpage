@@ -1,29 +1,179 @@
 <!DOCTYPE html>
 <html>
+<style>
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;    
+    }
+
+    a {
+        text-decoration: none;
+        color: #333
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff
+        box-shadow 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+ }
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-size: 1.1m;
+    font-weight: bold;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.welcome-container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+#project {
+    padding: 50px-20px;
+    background-color: #fff;
+}
+
+.project-title {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.project-title h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-title p {
+    margin-bottom: 15px;
+}
+.project-title a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-title a:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) 
+{
+
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+#welcome-section {
+    height: 80vh;
+}
+
+.welcome-container {
+    padding: 10px;
+}
+
+.project-title {
+    padding: 15px;
+}
+
+.project-title h2 {
+    font-size: 1.2em;
+}
+
+</style>
 <html lang="en">
-    <head>
+ <head> 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" 
+content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-<title>Product Landing Page</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header id="header">
-        <img id="header-img" src="logo.png" alt="Product Logo">
-        <nav id="nav-bar">
-            <a class="nav-link" href="#features">Features</a>
-            <a class="nav-link" href="#video-section">Video Section</a>
-            <a class="nav-link" href="#Contact">Contact</a>
+ </head>
+ <body>
+    <header id="navbar">
+        <nav> 
+            <ul>
+                <li><a href="#welcome-section">Welcome</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#profile-link" target="_blank" rel="noopener noreferrer">Profile</a></li>
+            </ul>
         </nav>
     </header>
-<main>
-    <section id="features">
-        <h2>Features</h2>
-        <p>Our product offers the best features to help you succeed.</p>
-        <p>Feature 1: High Performance</p>
-        <p>Feature 2: User-Friendly Interface</p>
-        <p>Feature 3: 24/7 Support</p>
+    <section id="projects-section"> 
+        <div class="welcome-container">
+            <h1>Welcome to My Protfolio</h1>
+        </div>
     </section>
-		</body>
-    </html>
+    
+    <section id="projects">
+        <div class="project-title"> 
+            <h2>Project 1</h2>
+            <p>Project 1 description</p>
+            <a href="https://example.com/project1" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+        <div class="project-title"> 
+            <h2>Project 2</h2>
+            <p>Project 2 description</p>
+            <a href="https://example.com/project2" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+    </section>
+
+<footer> 
+    <a id="profile_link" href="https://github.com/sharek" target="_blank" rel="noopener noreferrer">Visit My Github Profile</a>
+</footer>
+ </body>
+ <p>Checkout this python basics: <a href="file:///C:/Users/share/.vscode/Technical%20Documantation%20page%20of%20python.html">Python Basics</a>
+</p>
+</html>
